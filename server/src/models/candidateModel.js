@@ -31,6 +31,19 @@ const candidateSchema = new mongoose.Schema({
         type: String 
     },
 
+    password: {
+        type: String,
+        required: true,
+    },
+
 }, { timestamps: true });
+
+candidateSchema.pre('save', async function (next) {
+    if (!this.isModified('password')) {
+        next();
+    }
+    const salt = await bcrypt.genSalt(10);
+    this.password = await bcrypt.hash(this.password, salt);
+});
 
 export const Candidate = mongoose.model('Candidate', candidateSchema);
