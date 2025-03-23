@@ -1,0 +1,17 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "backend for interview app",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Samir Kumar Barman",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.2"
+  }
+}
