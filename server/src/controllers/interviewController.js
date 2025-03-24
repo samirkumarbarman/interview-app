@@ -1,7 +1,7 @@
 import * as interviewService from '../services/interviewService.js';
 
 //Create new interview
-export const createInterview = async (req, res) => {
+export const createNewInterview = async (req, res) => {
     try {
         const interview = await interviewService.createInterview(req.body);
         res.status(201).json(interview);
