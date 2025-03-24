@@ -1,4 +1,4 @@
-import * as candidateService from '../services/candidateService.js';
+import * as candidateService from '../services/candidateServices.js';
 
 //Get all candidates
 export const getCandidates = async (req, res) => {

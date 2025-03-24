@@ -1,4 +1,4 @@
-import * as voiceService from '../services/voiceService.js';
+import * as voiceService from '../services/voiceServices.js';
 
 //Create new voice
 export const createNewVoice = async (req, res) => {

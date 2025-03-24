@@ -1,6 +1,6 @@
 import * as writtenController from '../controllers/writtenController.js';
 import express from 'express';
-import { authenticate, authorize } from '../middlewares/auth.js';
+import { authenticate, authorize } from '../middlewares/authMiddleware.js';
 
 const router = express.Router();
 

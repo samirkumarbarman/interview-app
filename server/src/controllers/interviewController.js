@@ -1,4 +1,4 @@
-import * as interviewService from '../services/interviewService.js';
+import * as interviewService from '../services/interviewServices.js';
 
 //Create new interview
 export const createNewInterview = async (req, res) => {

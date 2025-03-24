@@ -1,4 +1,4 @@
-import * as mcqService from '../services/mcqService.js';
+import * as mcqService from '../services/mcqServices.js';
 
 //Create new MCQ
 export const createNewMcq = async (req, res) => {

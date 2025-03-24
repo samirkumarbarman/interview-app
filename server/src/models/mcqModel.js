@@ -1,9 +1,10 @@
 import mongoose from "mongoose";
+import { v4 as UUIDV4 } from 'uuid';
 
 const mcqSchema = new mongoose.Schema({
     mcqId: {
         type: String,
-        default: uuidv4,
+        default: UUIDV4,
         unique: true 
     },
 

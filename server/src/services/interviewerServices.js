@@ -1,4 +1,4 @@
-import { Interviewer } from "../models/interviewerModel";
+import { Interviewer } from "../models/interviewerModel.js";
 import bcrypt from "bcryptjs";
 
 //Get Interviewer by Id

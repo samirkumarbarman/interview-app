@@ -1,4 +1,4 @@
-import { Candidate } from "../models/candidateModel";
+import { Candidate } from "../models/candidateModel.js";
 import bcrypt from "bcryptjs";
 
 //Get Candidate by Id

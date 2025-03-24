@@ -1,4 +1,4 @@
-import * as writtenService from '../services/writtenService.js';
+import * as writtenService from '../services/writtenServices.js';
 
 //Create new written
 export const createNewWritten = async (req, res) => {

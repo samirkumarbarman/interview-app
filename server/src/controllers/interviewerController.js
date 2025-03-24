@@ -1,4 +1,4 @@
-import * as interviewerService from '../services/interviewerService.js';
+import * as interviewerService from '../services/interviewerServices.js';
 
 //Get all interviewers
 export const getInterviewers = async (req, res) => {

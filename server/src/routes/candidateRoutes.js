@@ -1,6 +1,6 @@
 import express from 'express';
-import * as candidateController from '../controllers/candidateController';
-import { authenticate, authorize } from '../middlewares/auth.js';
+import * as candidateController from '../controllers/candidateController.js';
+import { authenticate, authorize } from '../middlewares/authMiddleware.js';
 
 const router = express.Router();
 

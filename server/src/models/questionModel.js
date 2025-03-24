@@ -1,9 +1,10 @@
 import mongoose from "mongoose";
+import { v4 as UUIDV4 } from 'uuid';
 
 const questionSchema = new mongoose.Schema({
     questionId: {
         type: String,
-        default: uuidv4,
+        default: UUIDV4,
         unique: true 
     },
 

@@ -1,9 +1,10 @@
 import mongoose from "mongoose";
+import { v4 as UUIDV4 } from 'uuid';
 
 const voiceSchema = new mongoose.Schema({
     voiceAnswerId: {
         type: String,
-        default: uuidv4,
+        default: UUIDV4,
         unique: true 
     },
 
