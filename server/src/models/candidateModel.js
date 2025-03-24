@@ -36,6 +36,12 @@ const candidateSchema = new mongoose.Schema({
         required: true,
     },
 
+    role: {
+        type: String,
+        enum: ['candidate', 'interviewer', 'admin'],
+        default: 'candidate',
+    },
+
 }, { timestamps: true });
 
 candidateSchema.pre('save', async function (next) {
