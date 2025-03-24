@@ -15,9 +15,9 @@ export const getQuestionById = async (questionId) => {
 };
 
 //Get All Question
-export const getAllQuestion = async () => {
-    const question = await Question.find();
-    return question;
+export const getAllQuestions = async () => {
+    const questions = await Question.find();
+    return questions;
 };
 
 //Update Question
