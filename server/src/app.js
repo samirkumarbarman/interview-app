@@ -10,6 +10,7 @@ import voiceRoutes from './routes/voiceRoutes.js';
 import writtenRoutes from './routes/writtenRoutes.js';
 import connectDB from './config/db.js';
 import errorHandler from './middlewares/errorHandler.js';
+import { limiter } from './middlewares/rateLimit.js';
 
 dotenv.config();
 connectDB();
@@ -17,6 +18,8 @@ connectDB();
 const app = express();
 
 app.use(express.json());
+
+app.use(limiter);
 
 app.use('/api/auth', authRoutes);
 
