@@ -43,6 +43,10 @@ const candidateSchema = new mongoose.Schema({
         default: 'candidate',
     },
 
+    cv : {
+        type : String,
+    },
+
 }, { timestamps: true });
 
 candidateSchema.pre('save', async function (next) {

@@ -39,3 +39,20 @@ export const candidateDelete = async (req, res) => {
         res.status(400).json({ message: error.message });
     }
 };
+
+// Upload cv
+export const candidateCv = async (req, res) =>{
+    try {
+        const {candidateId} = req.params;
+        const cvFile = req.file;
+        if (!cvFile){
+            return res.status(400).json({message:"No file selected or invalid file"});
+        }
+
+        const updateCandidate = await candidateService.uploadCv(candidateId, cvFile);
+        res.status(200).json(`cv uploaded successfully:${updateCandidate}`);
+
+    } catch (error) {
+        res.status(500).json({message:"Error uploading cv"});
+    }
+};
