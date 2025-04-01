@@ -6,6 +6,8 @@ import LoginPage from './pages/LoginPage.jsx';
 import GetStartedPage from './pages/GetStartedPage.jsx';
 import LoginOptions from './components/LoginOptions.jsx';
 import RegisterOptions from './components/RegisterOptions.jsx';
+import CandidateDashboard from './components/CandidateDashboard.jsx';
+import InterviewerDashboard from './components/InterviewerDashboard.jsx';
 import "./App.css"
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
         <Route path="/register-options" element={<RegisterOptions />} />
         <Route path="/login/:userType" element={<LoginPage />} />
         <Route path="/register/:userType" element={<RegisterPage />} />
+        <Route path="/dashboard/candidate" element={<CandidateDashboard />} />
+        <Route path="/dashboard/interviewer" element={<InterviewerDashboard />} />
       </Routes>
     </Router>
   );
