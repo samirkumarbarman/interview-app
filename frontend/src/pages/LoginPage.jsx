@@ -1,9 +1,9 @@
 import React from 'react';
 
-const RegisterPage = ({ userType }) => {
+const LoginPage = ({ userType }) => {
   return (
-    <div className="register-page">
-      <h1>Register as {userType}</h1>
+    <div className="login-page">
+      <h1>Login as {userType}</h1>
       <form>
         <label>
           Email:
@@ -15,10 +15,10 @@ const RegisterPage = ({ userType }) => {
           <input type="password" name="password" />
         </label>
         <br />
-        <button type="submit">Register</button>
+        <button type="submit">Login</button>
       </form>
     </div>
   );
 };
 
-export default RegisterPage;
+export default LoginPage;
